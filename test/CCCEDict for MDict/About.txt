@@ -1,0 +1,55 @@
+These MDict databases are derived from the CC-CEDict project,  under the  Creative Commons Attribution-Share Alike 3.0 License.
+
+The databases are:
+1. pin2eng.mdx - a database searchable by pinyin with tone numbers
+2. chs2eng.mdx - a database searchable by simplified Chinese characters.
+
+(in spite of naming, both databases have Chinese, pinyin and English in the definitions.)
+
+These converted databases omit a number of records from the original due to undisplayable characters.  These are mostly Japanese, Korean or unicode "compatibility" characters.  
+They contain 63973 entries.
+Traditional Chinese characters have been removed (although it is possible that due to shortcomings of the conversion process, a few remain in the definitions.)
+No attempt has been made to correct errors and duplications from the original CC-CEDict database.
+
+The conversion was done with perl scripts to extract and reformat the data, and Rayman Zhang's MdxBuilder v2.5 to build the databases.
+These databases built 5 September 2008.
+The only difference from the May 2008 version is that the display style has been modified so that Chinese characters are larger on screen.
+
+Full details from the original database:-
+
+# CC-CEDICT
+# Community maintained free Chinese-English dictionary.
+# 
+# Published by MDBG
+# 
+# License:
+# Creative Commons Attribution-Share Alike 3.0
+# http://creativecommons.org/licenses/by-sa/3.0/
+# 
+# Referenced works:
+# CEDICT - Copyright (C) 1997, 1998 Paul Andrew Denisowski
+# 
+# CC-CEDICT can be downloaded from:
+# http://www.mdbg.net/chindict/chindict.php?page=cedict
+# http://www.xuezhongwen.net/chindict/chindict.php?page=cedict
+# 
+# Additions and corrections can be sent through:
+# http://www.xuezhongwen.net/cedicteditor/editor.php
+# 
+# New releases are announced on:
+# http://groups.google.com/group/chinese-dictionaries
+# 
+# For more information about CC-CEDICT see:
+# http://www.mdbg.net/cedictwiki/
+# 
+# 
+#!version=1
+#!subversion=0
+#!format=ts
+#!charset=UTF-8
+#!entries=64231
+#!publisher=MDBG
+#!license=http://creativecommons.org/licenses/by-sa/3.0/
+#!date=2008-05-04T11:46:03Z
+#!time=1209901563
+

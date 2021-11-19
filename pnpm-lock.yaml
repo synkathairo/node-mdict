@@ -1,0 +1,19 @@
+lockfileVersion: 5.3
+
+specifiers:
+  js-salsa20: ^1.0.0
+  jspack: ^0.0.4
+
+dependencies:
+  js-salsa20: 1.0.0
+  jspack: 0.0.4
+
+packages:
+
+  /js-salsa20/1.0.0:
+    resolution: {integrity: sha1-p90ISdtLV0pI7VWVaUBKmSztZM4=}
+    dev: false
+
+  /jspack/0.0.4:
+    resolution: {integrity: sha1-Mt01x/3LPjRWwY+7fvntC8YjgXc=}
+    dev: false
