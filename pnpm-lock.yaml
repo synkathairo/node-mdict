@@ -3,10 +3,12 @@ lockfileVersion: 5.3
 specifiers:
   js-salsa20: ^1.0.0
   jspack: ^0.0.4
+  zlib: ^1.0.5
 
 dependencies:
   js-salsa20: 1.0.0
   jspack: 0.0.4
+  zlib: 1.0.5
 
 packages:
 
@@ -16,4 +18,9 @@ packages:
 
   /jspack/0.0.4:
     resolution: {integrity: sha1-Mt01x/3LPjRWwY+7fvntC8YjgXc=}
+    dev: false
+
+  /zlib/1.0.5:
+    resolution: {integrity: sha1-bnyXL8NxxkWmr7A6sUdp3vEU/MA=}
+    engines: {node: '>=0.2.0'}
     dev: false

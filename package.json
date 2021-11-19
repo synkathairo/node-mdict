@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "js-salsa20": "^1.0.0",
-    "jspack": "^0.0.4"
+    "jspack": "^0.0.4",
+    "zlib": "^1.0.5"
   },
   "name": "node-mdict",
   "version": "1.0.0",
