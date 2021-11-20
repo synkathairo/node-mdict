@@ -20,4 +20,4 @@ Both are included on the [MDict download page](https://www.mdict.cn/wp/?page_id=
 
 ## Notice
 
-Please note that this repository does not include test files and that the user bears full responsibility for content.
+Please note that the user bears full responsibility for any additional content not included within this repository.
