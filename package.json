@@ -1,7 +1,9 @@
 {
   "dependencies": {
+    "@aksel/structjs": "^1.0.0",
     "js-salsa20": "^1.0.0",
     "jspack": "^0.0.4",
+    "lzo": "^0.4.11",
     "zlib": "^1.0.5"
   },
   "name": "node-mdict",

@@ -1,6 +1,12 @@
 const jspack = require("jspack");
 const Salsa20 = require("js-salsa20");
 const zlib = require("zlib");
+const structjs = require("@aksel/structjs");
+try {
+	const lzo = require("lzo");
+} catch (error) {
+	
+}
 
 function _unescape_entities(text) {
 	// unescape offending tags < > " &
@@ -9,7 +15,7 @@ function _unescape_entities(text) {
 	text = text.replace('&gt;', '>');
 	text = text.replace('&quot;', '"');
 	text = text.replace('&amp;', '&');
-	return text
+	return text;
 }
 
 function _fast_decrypt(data, key) {
@@ -36,10 +42,42 @@ function _salsa_decrypt(ciphertext, encrypt_key) {
 	// TODO we need a nonce value?
 }
 
-class MDict(object) => {
+class MDict {
 	// Base class which reads in header and key block.
 	// It has no public methods and serves only as code sharing base class.
-	constructor(self, fname, encoding='', passcode=null) {
-		
+	constructor(fname, encoding='', passcode=null) {
+		this._fname = fname;
+		this._encoding = encoding.upper();
+		this._passcode = passcode;
+
+		this.header = this._read_header();
+		try {
+			this._key_list = this._read_keys();
+		} catch (error) {
+			console.log("Try Brutal Force on Encrypted Key Blocks");
+			this._key_list = this._read_keys_brutal();
+		}
+	}
+
+	__len__() {
+		return this._num_entries;
+	}
+	
+	__iter__() {
+		return this.keys();
+	}
+	
+	// keys() {
+	// 	// Return an iterator over dictionary keys.
+	// 	for (const key_value in object) {
+	// 		if (Object.hasOwnProperty.call(object, key_value)) {
+	// 			const element = object[key_value];
+				
+	// 		}
+	// 	}
+	// }
+
+	_read_number(f) {
+		return structjs.unpack(this._number_format, f.read(this._number_width))[0];
 	}
 }
